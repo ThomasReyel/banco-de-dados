@@ -58,3 +58,10 @@ Esses modelos são voltados para o entendimento dos registros dos dados, o BD é
 - Modelos físicos.
 Como a informação é gravada fisicamente na máquina.
 
+
+## Modelo Entidade-Relacionamento
+- Entidade: É um objeto que existe e é parte do negócio seja ele um objeto real ou abstrato (ex: carro ou venda). Uma entidade é um conjunto de atributos
+- Atributos: São características comuns a instâncias das entidades. São divididas em 2 tipos
+  - Simples: É atômico (ex: Idade: numérico; Nome: cadeia de caracteres).
+  - Composto: Contém sub-atributos que compõem o atributo (ex: Endereço: (rua, número, bairro, cidade)).
+- Relacionamento: são a forma e a quantidade na qual as entidades se relacionam entre si.
