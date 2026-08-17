@@ -56,4 +56,5 @@ Se  fundamenta nos preceitos de OO com objetos, Encapsulamento, herança e etc.
 - Modelos lógicos com base em registros;
 Esses modelos são voltados para o entendimento dos registros dos dados, o BD é estruturado por meio de registros fixos
 - Modelos físicos.
+Como a informação é gravada fisicamente na máquina.
 
