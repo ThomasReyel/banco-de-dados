@@ -64,4 +64,12 @@ Como a informação é gravada fisicamente na máquina.
 - Atributos: São características comuns a instâncias das entidades. São divididas em 2 tipos
   - Simples: É atômico (ex: Idade: numérico; Nome: cadeia de caracteres).
   - Composto: Contém sub-atributos que compõem o atributo (ex: Endereço: (rua, número, bairro, cidade)).
-- Relacionamento: são a forma e a quantidade na qual as entidades se relacionam entre si.
+- Relacionamento: são a forma e a quantidade na qual as entidades se relacionam entre sí. pra ver a cardinalidade sempre se pergunte "1 instância dessa está em quantas instâncias da outra".
+OBS: Na cardinalidade a relação só é total quando não existe a opção de uma instância de relacionar. E parcial se possuir a opção de uma instância se relacionar.
+
+- Superchaver
+Conjunto de atributos que identifica unicamente uma instância de determinada entidade (id), nome não é superchave. Todo superconjunto de superchaves são superchaves.
+
+- Chave
+Conjunto mínimo de informação de atributos capazes de identificar uma entidade. **Chave Primária** é a chave mestra pra identificar alguém.
+OBS: Quando a entidade não tem uma chave boa você usa um "surrogate", que é uma chave que você cria (Tipo o id ou keys). Já são gerados pelo SGBD
