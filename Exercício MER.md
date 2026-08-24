@@ -76,3 +76,45 @@ PARTIDA ||--|{ GOL: Possui
 
 GOL ||--|{ ESCALACAO: Contém
 ```
+
+## Questão 3
+
+
+```mermaid
+erDiagram
+  UFRN {
+  
+  }
+
+  CENTRO {}
+
+  DEPARTAMENTO {}
+
+  DOCENTE {}
+
+  COMPONENTE_CURRICULAR {}
+
+  CURSO {}
+
+  ESTRUTURA_CURRICULAR {}
+
+  ALUNO {}
+
+  DISCIPLINA {}
+
+  MATRICULA {}
+
+  TURMA {}
+
+  CENTRO ||--|{ CURSO : tem
+  CENTRO ||--|{ DEPARTAMENTOS : tem
+  ALUNO }|--|| CURSO : matriculado
+  CURSO ||--|{ COMPONENTE_CURRICULAR : tem
+  DEPARTAMENTO ||--|{ COMPONENTE_CURRICULAR : responsável
+  DOCENTE }|--|{ TURMA : ensina
+  TURMA }|--|{ ALUNO : tem
+  DISCIPLINA ||--|{ TURMA : tem
+  TURMA ||--|{ ALUNO : monitor
+  ALUNO }|--|| DEPARTAMENTO : tem
+  
+```
