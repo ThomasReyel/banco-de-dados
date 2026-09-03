@@ -118,3 +118,182 @@ erDiagram
   ALUNO }|--|| DEPARTAMENTO : tem
   
 ```
+
+## Questão 4
+
+```mermaid
+erDiagram
+
+    VEÍCULO {
+
+      string marca
+      string placa
+      string cor
+      date ano
+      float quilometragem
+      float locação
+      string categoria
+  }
+
+    CLIENTE {
+
+      string cpf
+      string cnh
+      string nome
+      string endereço
+      string telefone
+      int idade
+}
+
+    ALUGUEL {
+
+      string cliente
+      string veículo
+      date data
+      string hora
+}
+
+    LISTA {
+
+      int qnt_veículos
+      float horas
+      float valor_total_aluguéis
+      int qnt_multas
+}
+
+    TÉCNICO {
+
+      string numero_cadastro
+      string cpf
+      string nome
+}
+
+ALUGUEL }|--|| VEÍCULO: tem
+ALUGUEL }|--|| CLIENTE: faz
+LISTA ||--|| CLIENTE: tem
+TÉCNICO }|--|{ VEÍCULO: revisa
+```
+
+## Questão 5
+
+
+```mermaid
+erDiagram
+
+CLIENTE {
+
+    string cpf
+    string nome
+    string telefone
+    string endereço
+}
+
+PRODUTO {
+
+    string nome
+    string tipo
+    string preço
+    string quantidade
+    float preço
+    int quantidade
+}
+
+COMPRA {
+
+    string cliente
+    date data
+    float valor_total
+    string produtos
+}
+
+FUNCIONARIOS {
+
+    string nome
+    string telefone
+    string endereço
+    float salário
+    string função
+    string cpf
+}
+
+FORNECEDOR {
+
+    string nome
+    string cnpj
+    string telefone
+    string endereço
+}
+
+CLIENTE ||--|{ COMPRA: tem
+PRODUTO }|--|{ COMPRA: possui
+
+```
+## Questão 6
+
+```mermaid
+erDiagram
+
+DEPARTAMENTO {
+
+    string nome
+    int número
+}
+
+PROJETO {
+
+    string nome
+    int número
+    date período
+}
+
+FUNCIONÁRIO {
+    int id
+}
+
+PESQUISADOR {
+
+    string nome
+    string endereço
+    string sexo
+    date data_nascimento
+    float salário
+    string área
+}
+
+SECRETÁRIO {
+
+    string nome
+    string endereço
+    string sexo
+    date data_nascimento
+    float salário
+    string grau_escolaridade
+
+}
+
+LIMPEZA {
+
+    string nome
+    string endereço
+    string sexo
+    date data_nascimento
+    float salário
+    string jornada_trabalho
+}
+
+DEPENDENTE {
+
+    string nome
+    string endereço
+    string sexo
+    string grau_parentesco
+}
+
+DEPARTAMENTO ||--|{ PROJETO: controla
+FUNCIONÁRIO ||--|| LIMPEZA: "pode ser"
+FUNCIONÁRIO ||--|| PESQUISADOR: "pode ser"
+FUNCIONÁRIO ||--|| SECRETÁRIO: "pode ser"
+FUNCIONÁRIO }|--|| DEPARTAMENTO: pertence
+PESQUISADOR }|--|{ PROJETO: trabalha
+FUNCIONÁRIO ||--|{ DEPENDENTE: possui
+```
