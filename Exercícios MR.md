@@ -13,3 +13,12 @@
 - Compra(int id PK;int id_cliente FK; int id_funcionario FK; string cliente; date data; float valor_total; string produtos)
 - Funcionario(int id PK;string nome;string telefone;string endereço;float salário;string função;string cpf)
 - Fornecedor(int id PK;string nome;string cnpj; string telefone;string endereço)
+
+### Tabela de modelo relacional dos exercícios de modelo entidade-relacionamento da questão 6
+
+- Departamento(int id PK; string nome; int número)
+- Projeto(int id PK; int id_departamento FK; string nome; int número; date período)
+- Pesquisador(int id PK; string nome;id_departamento FK; string endereço; string sexo; date data_nascimento; float salário; string área)
+- Secretario(int id PK; string nome;id_departamento FK; string endereço; string sexo; date data_nascimento; float salário; string grau_escolaridade)
+- Limpeza(int id PK; string nome;id_departamento FK; string endereço; string sexo; date data_nascimento; float salário; string jornada_trabalho)
+- Dependente(int id PK; string nome; string endereço; string sexo;string grau_parentesco)
