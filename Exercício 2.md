@@ -4,7 +4,7 @@
 
 2 - Letra A
 
-3 - Letra C
+3 - Letra A
 
 4 - Falso
 
@@ -22,4 +22,35 @@
 
 11 - 
 
+```mermaid
 erDiagram
+    PRODUTO {
+      int codigo
+      string nome
+      float preco
+    }
+
+    CLIENTE{
+      int codigo
+      string nome
+      string endereço
+      string telefone
+      string status
+    }
+
+    CATEGORIA{
+      int codigo
+      string categoria
+    }
+
+    PEDIDO{
+      int codigo
+      
+    }
+PRODUTO }|--o{ PEDIDO : Possui
+
+CLIENTE ||--|{ PEDIDO : Possui
+
+PRODUTO ||--|| CATEGORIA : Possui
+
+```
