@@ -1,24 +1,37 @@
 ## Questão 1
 Funcionário(<ins>Matrícula</ins>, Nome, DataNasc,Nacionalidade,Sexo, EstCivil, RG, CIC, DataAdmissão)
 
-Telefone(**idFunc**, telefone)
+Telefone(**idFunc**, <ins>telefone</ins>)
 
-Endereço(**idFunc**,id, CEP, Rua, Bairro, cidade, numero)
+Endereço(**idFunc**,<ins>id</ins>, CEP, Rua, Bairro, cidade, numero)
 
-CargoOcupado(**idFunc**, id, Cargo, DtInicio, DtFim)
+CargoOcupado(**idFunc**, <ins>id</ins>, Cargo, DtInicio, DtFim)
 
 Dependentes(**idFunc**,<ins>id</ins>, Nome, DtNascimento)
 
 ## Questão 2
-Cliente(codigo, nome)
+Cliente(<ins>codigo</ins>, nome)
 
-Telefone(**cod_cli**, id, telefone)
+Telefone(**cod_cli**, <ins>id</ins>, telefone)
 
-Endereço(id,**cod_cli**,rua, numero,cidade,estado,cep)
+Endereço(<ins>id</ins>,**cod_cli**,rua, numero,cidade,estado,cep)
 
 ## Questão 3
-Pedido(idPedido,Data,**codProduto**,qtde)
+Pedido(<ins>idPedido</ins>,Data,**codProduto**,qtde)
 
-Produto(codProduto,**codCategoria**, nomeProduto, valorUnitário)
+Produto(<ins>codProduto</ins>,**codCategoria**, nomeProduto, valorUnitário)
 
-Categoria(codCategoria,NomeCategoria)
+Categoria(<ins>codCategoria</ins>,NomeCategoria)
+
+## Questão 4
+
+Pacientes(<ins>numPaciente</ins>, Nome, DataNasc, sexo, RG, Est.Civil, Convênio)
+Telefone(**numPaciente**, <ins>telefone</ins>)
+
+Endereço(**numPaciente**,<ins>id</ins>, CEP, Rua, Bairro, cidade, numero)
+
+Consultas(<ins>numConsulta</ins>,**numPaciente**, data, CRM, diganóstico)
+
+Consulta_Exames(**numConsultas**,**numExames**)
+
+Exames(<ins>numExames</ins>, exame, data)
